@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="container" style={{ fontFamily: 'Courier Prime, monospace' }}>
       <header className="header">
-        <img src="/logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
+        <img src="./logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
         
         {/* Ícono de hamburguesa para la versión móvil */}
         <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -104,7 +104,7 @@ export default function App() {
 </section>
         <section id="bio" className="section fade-in">
           <h2 className="psychedelic-text">Biografía</h2>
-          <img src="carrusel1.jpg" alt="ÉPIKA Band" className="bio-photo glitch-effect" />
+          <img src="./carrusel1.jpg" alt="ÉPIKA Band" className="bio-photo glitch-effect" />
           <p>Épika, banda de rock que fusiona hard, power y noise-rock, se formó en 2001, en Asunción-Paraguay, que en poco tiempo tuvo que separarse.
 Durante la pandemia, después de 18 años los miembros se reencontraron, sumando a un nuevo integrante.
 Este resurgimiento trae consigo una nueva perspectiva y una intensificación de su distintivo sonido ecléctico.<br></br><br></br>
@@ -130,7 +130,7 @@ Voz: Rodrigo Pampliega</p>
       </main>
       <footer className="footer">
         © 2024 ÉPIKA | Todos los derechos reservados | Desarrollado por <a href="https://frandelgadol.github.io/webcv/" target="_blank" rel="noopener noreferrer" className="dev-logo">
-  <img src="/gasrecort3.png" alt="Fran Delgado Dev" />
+  <img src="./gasrecort3.png" alt="Fran Delgado Dev" />
 </a>
         
       </footer>
@@ -241,19 +241,19 @@ Voz: Rodrigo Pampliega</p>
 
 @keyframes slideshow {
   0%, 25% {
-    background-image: url('/epikafondo1.jpg');
+    background-image: url('./epikafondo1.jpg');
     filter: hue-rotate(0deg) saturate(1.5);
   }
   25%, 50% {
-    background-image: url('/epikafondo2.jpg');
+    background-image: url('./epikafondo2.jpg');
     filter: hue-rotate(120deg) saturate(2);
   }
   50%, 75% {
-    background-image: url('/epikafondo3.jpg');
+    background-image: url('./epikafondo3.jpg');
     filter: hue-rotate(240deg) saturate(1.8);
   }
   75%, 100% {
-    background-image: url('/epikafondo4.jpg');
+    background-image: url('./epikafondo4.jpg');
     filter: hue-rotate(360deg) saturate(1.5);
   }
 }
