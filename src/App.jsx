@@ -122,9 +122,9 @@ Voz: Rodrigo Pampliega</p>
         <section id="fechas" className="section fade-in">
           <h2 className="psychedelic-text">Fechas</h2>
           <ul>
-            <li>20 de Marzo - Asunción, Paraguay</li>
-            <li>15 de Abril - Encarnación, Paraguay</li>
-            <li>30 de Mayo - Ciudad del Este, Paraguay</li>
+            <li>Próximamente</li>
+            <li>Próximamente</li>
+            <li>Próximamente</li>
           </ul>
         </section>
       </main>
