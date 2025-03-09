@@ -45,7 +45,7 @@ export default function App() {
       <main className="main">
         <section id="inicio" className="section section-fullscreen parallax">
           <div className="intro">
-          <h2 class="alpha-text psychedelic-text"><span>ÉPIKA</span></h2>
+          <h2 className="alpha-text psychedelic-text"><span>ÉPIKA</span></h2>
             <p>Banda de rock alternativo de Sudamérica (Asunción-Paraguay)</p>
           </div>
         </section>
@@ -115,7 +115,7 @@ Voz: Rodrigo Pampliega</p>
         </section>
         <section id="videos" className="section fade-in">
           <h2 className="psychedelic-text">Videos</h2>
-          <a href="https://www.youtube.com/@Épika-Py" target="_blank" class="button">
+          <a href="https://www.youtube.com/@Épika-Py" target="_blank" className="button">
     Visitar nuestro canal YOUTUBE
   </a>
         </section>
@@ -164,13 +164,12 @@ Voz: Rodrigo Pampliega</p>
             transition: color 0.3s;
             padding-right: 60px;
           }
-          .nav-link:hover,  {
+          .nav-link:hover  {
             color: #ff4081;
           }
 
           .social-links {
             margin-top: 20px;
-            mar
           }
 
           .social-links a {
@@ -241,19 +240,19 @@ Voz: Rodrigo Pampliega</p>
 
 @keyframes slideshow {
   0%, 25% {
-    background-image: url('epikafondo1.JPG');
+    background-image: url('./epikafondo1.JPG');
     filter: hue-rotate(0deg) saturate(1.5);
   }
   25%, 50% {
-    background-image: url('epikafondo2.JPG');
+    background-image: url('./epikafondo2.JPG');
     filter: hue-rotate(120deg) saturate(2);
   }
   50%, 75% {
-    background-image: url('epikafondo3.JPG');
+    background-image: url('./epikafondo3.JPG');
     filter: hue-rotate(240deg) saturate(1.8);
   }
   75%, 100% {
-    background-image: url('epikafondo4.JPG');
+    background-image: url('./epikafondo4.JPG');
     filter: hue-rotate(360deg) saturate(1.5);
   }
 }
