@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="container" style={{ fontFamily: 'Courier Prime, monospace' }}>
       <header className="header">
-        <img src="logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
+        <img src="/logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
         
         {/* Ícono de hamburguesa para la versión móvil */}
         <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
