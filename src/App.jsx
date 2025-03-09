@@ -241,22 +241,23 @@ Voz: Rodrigo Pampliega</p>
 
 @keyframes slideshow {
   0%, 25% {
-    background-image: url(/epikafondo1.jpg');
+    background-image: url('epikafondo1.JPG');
     filter: hue-rotate(0deg) saturate(1.5);
   }
   25%, 50% {
-    background-image: url(/epikafondo2.jpg');
+    background-image: url('epikafondo2.JPG');
     filter: hue-rotate(120deg) saturate(2);
   }
   50%, 75% {
-    background-image: url(/epikafondo3.jpg');
+    background-image: url('epikafondo3.JPG');
     filter: hue-rotate(240deg) saturate(1.8);
   }
   75%, 100% {
-    background-image: url(/epikafondo4.jpg');
+    background-image: url('epikafondo4.JPG');
     filter: hue-rotate(360deg) saturate(1.5);
   }
 }
+
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
