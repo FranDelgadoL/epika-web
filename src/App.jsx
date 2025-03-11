@@ -104,7 +104,7 @@ export default function App() {
 </section>
         <section id="bio" className="section fade-in">
           <h2 className="psychedelic-text">Biografía</h2>
-          <img src="carrusel1.jpg" alt="ÉPIKA Band" className="bio-photo glitch-effect" />
+          <img src="/epika-web/carrusel1.jpg" alt="ÉPIKA Band" className="bio-photo glitch-effect" />
           <p>Épika, banda de rock que fusiona hard, power y noise-rock, se formó en 2001, en Asunción-Paraguay, que en poco tiempo tuvo que separarse.
 Durante la pandemia, después de 18 años los miembros se reencontraron, sumando a un nuevo integrante.
 Este resurgimiento trae consigo una nueva perspectiva y una intensificación de su distintivo sonido ecléctico.<br></br><br></br>
