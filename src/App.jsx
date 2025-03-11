@@ -290,15 +290,18 @@ Voz: Rodrigo Pampliega</p>
             opacity: 0;
             animation: fadeIn 2s forwards;
           }
-          @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-          }
+          
           .glitch-effect {
             animation: glitch 0.7s infinite alternate;
           }
             
-          
+          @keyframes glitch {
+            0% { transform: translate(0, 0); opacity: 1; }
+            25% { transform: translate(2px, -2px); opacity: 0.8; }
+            50% { transform: translate(-2px, 2px); opacity: 1; }
+            75% { transform: translate(2px, 2px); opacity: 0.8; }
+            100% { transform: translate(-2px, -2px); opacity: 1; }
+          }
           .footer {
             padding: 20px;
           }
