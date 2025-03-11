@@ -9,12 +9,8 @@ export default function App() {
 
   return (
     <div className="container" style={{ fontFamily: 'Courier Prime, monospace' }}>
-      <header className="header">
-<<<<<<< HEAD
-        <img src="/epika-web/logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
-=======
-        <img src="/epika-web//logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
->>>>>>> f5d9325 (Corrigiendo rutas y asegurando archivos en docs/)
+<header className="header">
+  <img src="/epika-web/logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
         
         {/* Ícono de hamburguesa para la versión móvil */}
         <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -134,15 +130,10 @@ Voz: Rodrigo Pampliega</p>
       </main>
       <footer className="footer">
         © 2024 ÉPIKA | Todos los derechos reservados | Desarrollado por <a href="https://frandelgadol.github.io/webcv/" target="_blank" rel="noopener noreferrer" className="dev-logo">
-<<<<<<< HEAD
-  <img src="/epika-web/gasrecort3.png" alt="Fran Delgado Dev" />
-=======
-  <img src="/epika-web//gasrecort3.png" alt="Fran Delgado Dev" />
->>>>>>> f5d9325 (Corrigiendo rutas y asegurando archivos en docs/)
-</a>
-        
+          <img src="/epika-web/gasrecort3.png" alt="Fran Delgado Dev" />
+        </a>
       </footer>
-
+      
       {/* Inline CSS */}
       <style>{`
           .container {
@@ -248,7 +239,6 @@ Voz: Rodrigo Pampliega</p>
 
 @keyframes slideshow {
   0%, 25% {
-<<<<<<< HEAD
     background-image: url('/epika-web/epikafondo1.JPG');
     filter: hue-rotate(0deg) saturate(1.5);
   }
@@ -262,31 +252,9 @@ Voz: Rodrigo Pampliega</p>
   }
   75%, 100% {
     background-image: url('/epika-web/epikafondo4.JPG');
-=======
-    background-image: url('/epika-web//epikafondo1.JPG');
-    filter: hue-rotate(0deg) saturate(1.5);
-  }
-  25%, 50% {
-    background-image: url('/epika-web//epikafondo2.JPG');
-    filter: hue-rotate(120deg) saturate(2);
-  }
-  50%, 75% {
-    background-image: url('/epika-web//epikafondo3.JPG');
-    filter: hue-rotate(240deg) saturate(1.8);
-  }
-  75%, 100% {
-    background-image: url('/epika-web//epikafondo4.JPG');
->>>>>>> f5d9325 (Corrigiendo rutas y asegurando archivos en docs/)
     filter: hue-rotate(360deg) saturate(1.5);
   }
 }
-
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-
           .button {
             display: inline-block;
             padding: 10px 20px;
