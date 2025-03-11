@@ -174,7 +174,7 @@ Voz: Rodrigo Pampliega</p>
 
           .social-links a {
             color: white;
-            margin: 0 50px;
+            margin: 0 30px;
           }
           .section {
             padding: 20px;
