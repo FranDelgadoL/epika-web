@@ -223,20 +223,6 @@ Voz: Rodrigo Pampliega</p>
   transition: background-image 3s ease-in-out; /* Efecto disolución suave */
 }
 
-
-.parallax::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  animation: float 10s infinite ease-in-out;
-  z-index: 1;
-  pointer-events: none;
-}
-
 @keyframes slideshow {
   0%, 25% {
     background-image: url('/epika-web/epikafondo1.JPG');
@@ -290,7 +276,10 @@ Voz: Rodrigo Pampliega</p>
             opacity: 0;
             animation: fadeIn 2s forwards;
           }
-          
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
           .glitch-effect {
             animation: glitch 0.7s infinite alternate;
           }
