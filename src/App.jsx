@@ -13,128 +13,117 @@ export default function App() {
   <img src="/epika-web/logoparawebepika.jpg" alt="ÉPIKA Logo" className="logo-image" />
         
         {/* Ícono de hamburguesa para la versión móvil */}
-        <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <FaBars size={30} />
-        </div>
-        
-        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-          {sections.map((section, index) => (
-            <a
-              key={index}
-              href={`#${section.toLowerCase()}`}
-              className={`nav-link ${active === section ? 'active' : ''}`}
-              onClick={() => setActive(section)}
-            >
-              {section}
-            </a>
-          ))}
-        </nav>
-
-        <div className="social-links">
-          <a href="https://www.instagram.com/epika_band/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={24} />
-          </a>
-          <a href="https://www.youtube.com/@Épika-Py" target="_blank" rel="noopener noreferrer">
-            <FaYoutube size={24} />
-          </a>
-          <a href="https://open.spotify.com/artist/5lvdH6XeqBRX7ek7p5orHw?si=6l1uww1nR2-_rrglaW4PhQ" target="_blank" rel="noopener noreferrer">
-            <FaSpotify size={24} />
-          </a>
-        </div>
-      </header>
-      <main className="main">
-        <section id="inicio" className="section section-fullscreen parallax">
-          <div className="intro">
-          <h2 className="alpha-text psychedelic-text"><span>ÉPIKA</span></h2>
-            <p>Banda de rock alternativo de Sudamérica (Asunción-Paraguay)</p>
+          <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <FaBars size={30} />
           </div>
+          
+          <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+            {sections.map((section, index) => (
+              <a
+                key={index}
+                href={`#${section.toLowerCase()}`}
+                className={`nav-link ${active === section ? 'active' : ''}`}
+                onClick={() => setActive(section)}
+              >
+                {section}
+              </a>
+            ))}
+          </nav>
+
+          <div className="social-links">
+            <a href="https://www.instagram.com/epika_band/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram size={24} />
+            </a>
+            <a href="https://www.youtube.com/@Épika-Py" target="_blank" rel="noopener noreferrer">
+              <FaYoutube size={24} />
+            </a>
+            <a href="https://open.spotify.com/artist/5lvdH6XeqBRX7ek7p5orHw?si=6l1uww1nR2-_rrglaW4PhQ" target="_blank" rel="noopener noreferrer">
+              <FaSpotify size={24} />
+            </a>
+          </div>
+              </header>
+              <main className="main">
+          <section id="inicio" className="section section-fullscreen parallax">
+            <div className="intro">
+            <h2 className="alpha-text psychedelic-text"><span>ÉPIKA</span></h2>
+              <p>Banda de rock alternativo de Sudamérica (Asunción-Paraguay)</p>
+            </div>
+          </section>
+          <section id="musicas" className="section fade-in">
+          <h2 className="psychedelic-text">Músicas</h2>
+          
+<ul className="spotify-list">
+  <li><a href="https://open.spotify.com/track/2I7EMvGdnAIohAFeY02OHm" target="_blank" rel="noopener noreferrer">🎵 Canción 1</a></li>
+  <li><a href="https://open.spotify.com/track/6R0Dz736ZNvqFvuf5TSoDX" target="_blank" rel="noopener noreferrer">🎵 Canción 2</a></li>
+  <li><a href="https://open.spotify.com/track/1XZPHXQT7E7uschLYMWoNd" target="_blank" rel="noopener noreferrer">🎵 Canción 3</a></li>
+  <li><a href="https://open.spotify.com/track/0drYdaST9gFQgxN6hRGyd4" target="_blank" rel="noopener noreferrer">🎵 Canción 4</a></li>
+  <li><a href="https://open.spotify.com/track/1crbauq36URdbFmGzBVX40" target="_blank" rel="noopener noreferrer">🎵 Canción 5</a></li>
+  <li><a href="https://open.spotify.com/track/4mP0Ua9PU1tWdmSfwdN72o" target="_blank" rel="noopener noreferrer">🎵 Canción 6</a></li>
+</ul>
+
+
+
         </section>
-        <section id="musicas" className="section fade-in">
-  <h2 className="psychedelic-text">Músicas</h2>
-  
-<iframe
-  src="https://open.spotify.com/embed/track/2I7EMvGdnAIohAFeY02OHm"
-  width="25%"
-  height="100"
-  frameBorder="0"
-  allow="encrypted-media">
-</iframe>
+          <section id="bio" className="section fade-in">
+            <h2 className="psychedelic-text">Biografía</h2>
+            <img src="/epika-web/carrusel1.jpg" alt="ÉPIKA Band" className="bio-photo glitch-effect" />
+            <p>Épika, banda de rock que fusiona hard, power y noise-rock, se formó en 2001, en Asunción-Paraguay, que en poco tiempo tuvo que separarse.
+        Durante la pandemia, después de 18 años los miembros se reencontraron, sumando a un nuevo integrante.
+        Este resurgimiento trae consigo una nueva perspectiva y una intensificación de su distintivo sonido ecléctico.<br></br><br></br>
+        Guitarras: Alex Giaever, Paolo Castiñeira<br></br>
+        Batería: Rubén Arce<br></br>
+        Bajo: Fran Delgado<br></br>
+        Voz: Rodrigo Pampliega</p>
 
-<iframe
-  src="https://open.spotify.com/embed/track/6R0Dz736ZNvqFvuf5TSoDX"
-  width="25%"
-  height="100"
-  frameBorder="0"
-  allow="encrypted-media">
-</iframe>
+        <p style={{ fontStyle: 'italic', fontSize: '0.9em', color: 'gray' }}>
+  Las grabaciones fueron hechas en Sátiro Estudios por Felipe Achaval y en BlueNoise Records por Wladimir Woitas -que también colaboró en los teclados y synth- <br></br> y Colo O'Nell, en la remezcla y ecualizaciones.
+</p>
 
-<iframe
-  src="https://open.spotify.com/embed/track/1XZPHXQT7E7uschLYMWoNd"
-  width="25%"
-  height="100"
-  frameBorder="0"
-  allow="encrypted-media">
-</iframe>
+          </section>
+          <section id="videos" className="section fade-in">
+            <h2 className="psychedelic-text">Videos</h2>
+            <a href="https://www.youtube.com/@Épika-Py" target="_blank" className="button">
+            Visitar nuestro canal YOUTUBE
+          </a>
+          </section>
 
-<iframe
-  src="https://open.spotify.com/embed/track/0drYdaST9gFQgxN6hRGyd4"
-  width="25%"
-  height="100"
-  frameBorder="0"
-  allow="encrypted-media">
-</iframe>
+          <div class="apartados-container">
+  <div class="evento">
+    <h3>Fechas</h3>
+    <ul class="fechas">
+      <li>01 de abril 2025 - Asunción, Paraguay</li>
+      <li>15 de mayo 2025 - Ciudad del Este, Paraguay</li>
+      <li>30 de junio 2025 - Buenos Aires, Argentina</li>
+      <li>15 de julio 2025 - Santiago, Chile</li>
+    </ul>
+  </div>
 
-<iframe
-  src="https://open.spotify.com/embed/track/1crbauq36URdbFmGzBVX40"
-  width="25%"
-  height="100"
-  frameBorder="0"
-  allow="encrypted-media">
-</iframe>
+  <div class="apartados-container">
+  <div class="evento">
+    <h3><a href="#" class="btn">Galería de Fotos</a></h3>
+  </div>
 
-<iframe
-  src="https://open.spotify.com/embed/track/4mP0Ua9PU1tWdmSfwdN72o"
-  width="25%"
-  height="100"
-  frameBorder="0"
-  allow="encrypted-media">
-</iframe>
+  <div class="galeria">
+    <h3><a href="#" class="btn">Letras de las Canciones</a></h3>
+  </div>
+</div>
+
+</div>
 
 
-</section>
-        <section id="bio" className="section fade-in">
-          <h2 className="psychedelic-text">Biografía</h2>
-          <img src="/epika-web/carrusel1.jpg" alt="ÉPIKA Band" className="bio-photo glitch-effect" />
-          <p>Épika, banda de rock que fusiona hard, power y noise-rock, se formó en 2001, en Asunción-Paraguay, que en poco tiempo tuvo que separarse.
-Durante la pandemia, después de 18 años los miembros se reencontraron, sumando a un nuevo integrante.
-Este resurgimiento trae consigo una nueva perspectiva y una intensificación de su distintivo sonido ecléctico.<br></br><br></br>
-Guitarras: Alex Giaever, Paolo Castiñeira<br></br>
-Batería: Rubén Arce<br></br>
-Bajo: Fran Delgado<br></br>
-Voz: Rodrigo Pampliega</p>
-        </section>
-        <section id="videos" className="section fade-in">
-          <h2 className="psychedelic-text">Videos</h2>
-          <a href="https://www.youtube.com/@Épika-Py" target="_blank" className="button">
-    Visitar nuestro canal YOUTUBE
-  </a>
-        </section>
-        <section id="fechas" className="section fade-in">
-          <h2 className="psychedelic-text">Fechas</h2>
-          <ul>
-            <li>Próximamente</li>
-            <li>Próximamente</li>
-            <li>Próximamente</li>
-          </ul>
-        </section>
-      </main>
-      <footer className="footer">
-        © 2024 ÉPIKA | Todos los derechos reservados | Desarrollado por <a href="https://frandelgadol.github.io/webcv/" target="_blank" rel="noopener noreferrer" className="dev-logo">
-          <img src="/epika-web/gasrecort3.png" alt="Fran Delgado Dev" />
-        </a>
-      </footer>
-      
-      {/* Inline CSS */}
+
+
+
+
+
+              </main>
+              <footer className="footer">
+          © 2024 ÉPIKA | Todos los derechos reservados | Desarrollado por <a href="https://frandelgadol.github.io/webcv/" target="_blank" rel="noopener noreferrer" className="dev-logo">
+            <img src="/epika-web/gasrecort3.png" alt="Fran Delgado Dev" />
+          </a>
+              </footer>
+              
+              {/* Inline CSS */}
       <style>{`
           .container {
             text-align: center;
@@ -221,6 +210,20 @@ Voz: Rodrigo Pampliega</p>
   position: relative;
   filter: contrast(1.2) brightness(1.1);
   transition: background-image 3s ease-in-out; /* Efecto disolución suave */
+}
+
+
+.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  animation: float 10s infinite ease-in-out;
+  z-index: 1;
+  pointer-events: none;
 }
 
 @keyframes slideshow {
@@ -351,8 +354,142 @@ Voz: Rodrigo Pampliega</p>
   .nav-link:hover {
     color: #ff4081; /* Cambia el color al pasar el mouse */
   }
+
+
+.apartados-container {
+  display: flex; /* Utiliza flexbox para alinear los elementos en línea */
+  justify-content: space-between; /* Espacia los elementos de manera equitativa */
+  margin-top: 30px; /* Agrega un margen superior si lo necesitas */
 }
 
+.evento, .galeria, .letras {
+  flex: 1; /* Cada contenedor ocupa el mismo espacio disponible */
+  padding: 20px; /* Agrega algo de relleno a cada sección */
+  margin: 0 10px; /* Agrega un margen entre los elementos */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.evento h3, .galeria h3, .letras h3 {
+  text-align: center; /* Centra los títulos */
+  color: rgb(196, 224, 41); /* Color similar al texto principal */
+}
+
+
+/* Estilo para la lista de fechas */
+.fechas {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fechas li {
+  margin-bottom: 8px;
+}
+
+/* Estilo para los botones */
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .apartados-container {
+    flex-direction: column; /* En pantallas pequeñas, las secciones se apilan en lugar de alinearse en una fila */
+    gap: 10px;
+  }
+
+  .section {
+    flex: 1 1 100%; /* En pantallas pequeñas, las secciones ocuparán el 100% del ancho */
+    margin-bottom: 10px;
+  }
+}
+
+
+
+.section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo para la lista de conciertos */
+.conciertos-list {
+  list-style-type: none;  /* Elimina los puntos de la lista */
+  padding: 0;
+}
+
+.conciertos-list li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.conciertos-list li::before {
+  content: "🎸";  /* Emoji antes de cada fecha */
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Enlaces de las secciones */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #ff6347;
+}
+
+}
+
+.spotify-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.spotify-list li {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.spotify-list a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #1DB954, #0e7c3a);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el icono y el texto */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.spotify-list a:hover {
+  background: linear-gradient(135deg, #0e7c3a, #1DB954);
+  transform: translateY(-2px);
+}
+
+.spotify-list a::before {
+  content: "🎵";
+  font-size: 16px;
+}
 
         }
         `}
