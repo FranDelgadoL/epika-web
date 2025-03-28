@@ -53,12 +53,12 @@ export default function App() {
           <h2 className="psychedelic-text">Músicas</h2>
           
 <ul className="spotify-list">
-  <li><a href="https://open.spotify.com/track/2I7EMvGdnAIohAFeY02OHm" target="_blank" rel="noopener noreferrer">🎵 Canción 1</a></li>
-  <li><a href="https://open.spotify.com/track/6R0Dz736ZNvqFvuf5TSoDX" target="_blank" rel="noopener noreferrer">🎵 Canción 2</a></li>
-  <li><a href="https://open.spotify.com/track/1XZPHXQT7E7uschLYMWoNd" target="_blank" rel="noopener noreferrer">🎵 Canción 3</a></li>
-  <li><a href="https://open.spotify.com/track/0drYdaST9gFQgxN6hRGyd4" target="_blank" rel="noopener noreferrer">🎵 Canción 4</a></li>
-  <li><a href="https://open.spotify.com/track/1crbauq36URdbFmGzBVX40" target="_blank" rel="noopener noreferrer">🎵 Canción 5</a></li>
-  <li><a href="https://open.spotify.com/track/4mP0Ua9PU1tWdmSfwdN72o" target="_blank" rel="noopener noreferrer">🎵 Canción 6</a></li>
+  <li><a href="https://open.spotify.com/track/2I7EMvGdnAIohAFeY02OHm" target="_blank" rel="noopener noreferrer">🎵 Cadillac</a></li>
+  <li><a href="https://open.spotify.com/track/6R0Dz736ZNvqFvuf5TSoDX" target="_blank" rel="noopener noreferrer">🎵 Ancestral</a></li>
+  <li><a href="https://open.spotify.com/track/1XZPHXQT7E7uschLYMWoNd" target="_blank" rel="noopener noreferrer">🎵 Drugos</a></li>
+  <li><a href="https://open.spotify.com/track/0drYdaST9gFQgxN6hRGyd4" target="_blank" rel="noopener noreferrer">🎵 Cuentos</a></li>
+  <li><a href="https://open.spotify.com/track/1crbauq36URdbFmGzBVX40" target="_blank" rel="noopener noreferrer">🎵 Lo Abisal</a></li>
+  <li><a href="https://open.spotify.com/track/4mP0Ua9PU1tWdmSfwdN72o" target="_blank" rel="noopener noreferrer">🎵 Irreductibles</a></li>
 </ul>
 
 
@@ -87,10 +87,10 @@ export default function App() {
           </a>
           </section>
 
-          <div class="apartados-container">
-  <div class="evento">
+          <div className="apartados-container">
+  <div className="evento">
     <h3>Fechas</h3>
-    <ul class="fechas">
+    <ul className="fechas">
       <li>01 de abril 2025 - Asunción, Paraguay</li>
       <li>15 de mayo 2025 - Ciudad del Este, Paraguay</li>
       <li>30 de junio 2025 - Buenos Aires, Argentina</li>
@@ -98,22 +98,17 @@ export default function App() {
     </ul>
   </div>
 
-  <div class="apartados-container">
-  <div class="evento">
+  <div className="apartados-container">
+  <div className="evento">
     <h3><a href="#" class="btn">Galería de Fotos</a></h3>
   </div>
 
-  <div class="galeria">
-    <h3><a href="#" class="btn">Letras de las Canciones</a></h3>
+  <div className="galeria">
+    <h3><a href="/epika-web/letras.html" className="btn">Letras de las Canciones</a></h3>
   </div>
 </div>
 
 </div>
-
-
-
-
-
 
 
               </main>
@@ -389,8 +384,7 @@ export default function App() {
 /* Estilo para los botones */
 .btn {
   text-decoration: none;
-  color: #fff;
-  background-color: #007bff;
+  color: #c4e029;
   padding: 10px 20px;
   border-radius: 5px;
   display: inline-block;
@@ -412,6 +406,7 @@ export default function App() {
     flex: 1 1 100%; /* En pantallas pequeñas, las secciones ocuparán el 100% del ancho */
     margin-bottom: 10px;
   }
+    
 }
 
 
@@ -453,25 +448,23 @@ a:hover {
 }
 
 .spotify-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  text-align: center;
-  display: inline-block;
 }
 
 .spotify-list li {
-  margin: 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  margin: 10px;
 }
 
 .spotify-list a {
   text-decoration: none;
-  color: white;
-  background: linear-gradient(135deg, #1DB954, #0e7c3a);
+  color: black;
+  background: lightgrey;
   padding: 8px 15px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
@@ -484,11 +477,6 @@ a:hover {
 .spotify-list a:hover {
   background: linear-gradient(135deg, #0e7c3a, #1DB954);
   transform: translateY(-2px);
-}
-
-.spotify-list a::before {
-  content: "🎵";
-  font-size: 16px;
 }
 
         }
