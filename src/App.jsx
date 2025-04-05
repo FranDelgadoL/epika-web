@@ -91,10 +91,10 @@ export default function App() {
   <div className="evento">
     <h3>Fechas</h3>
     <ul className="fechas">
-      <li>01 de abril 2025 - Asunción, Paraguay</li>
-      <li>15 de mayo 2025 - Ciudad del Este, Paraguay</li>
-      <li>30 de junio 2025 - Buenos Aires, Argentina</li>
-      <li>15 de julio 2025 - Santiago, Chile</li>
+      <li>Próximamente</li>
+      <li>Próximamente</li>
+      <li>Próximamente</li>
+      <li>Próximamente</li>
     </ul>
   </div>
 
