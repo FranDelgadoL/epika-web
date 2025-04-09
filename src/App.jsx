@@ -89,19 +89,14 @@ export default function App() {
 
           <div className="apartados-container">
   <div className="evento">
-    <h3>Fechas</h3>
+    <h2 className="psychedelic-text">Fechas</h2>
     <ul className="fechas">
-      <li>Próximamente</li>
-      <li>Próximamente</li>
       <li>Próximamente</li>
       <li>Próximamente</li>
     </ul>
   </div>
 
   <div className="apartados-container">
-  <div className="evento">
-    <h3><a href="#" class="btn">Galería de Fotos</a></h3>
-  </div>
 
   <div className="galeria">
     <h3><a href="/epika-web/letras.html" className="btn">Letras de las Canciones</a></h3>
@@ -305,6 +300,18 @@ export default function App() {
                                 transform: scale(1.2); /* Efecto glitch sutil */
           }
 
+          .btn {
+  display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color:rgb(27, 26, 27);
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+}
+
+
 @media (max-width: 768px) {
   .nav {
     display: none; /* Esconde el menú en móviles por defecto */
@@ -383,12 +390,14 @@ export default function App() {
 
 /* Estilo para los botones */
 .btn {
-  text-decoration: none;
-  color: #c4e029;
-  padding: 10px 20px;
-  border-radius: 5px;
   display: inline-block;
-  margin-top: 10px;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color:rgb(27, 26, 27);
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
 }
 
 .btn:hover {
